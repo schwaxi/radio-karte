@@ -1,4 +1,4 @@
-// radio-karte v1.0.0
+// radio-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -345,7 +345,7 @@ class RadioKarte extends HTMLElement {
 
 if (!customElements.get(TYPE19)) customElements.define(TYPE19, RadioKarte);
 if (!window.customCards.some((c) => c.type === TYPE19)) {
-  window.customCards.push({ type: TYPE19, name: "Radio-Karte", description: "Lautsprecher mit Radiosendern: Play startet den Standardsender, Sender-Tasten, Lautstärke und Quelle" });
+  window.customCards.push({ type: TYPE19, name: "Radio-Karte", description: "Lautsprecher mit Radiosendern: Play startet den Standardsender, Sender-Tasten, Lautstärke und Quelle", preview: true });
 }
 }
 
